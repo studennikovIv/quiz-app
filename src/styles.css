@@ -1,0 +1,43 @@
+/* src/styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .app {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .question-box h2 {
+    font-size: 18px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    margin: 10px 0;
+  }
+  
+  .nav-buttons button {
+    margin: 5px;
+  }
+  /* styles.css (добавим стили для компактности) */
+.question-box {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+  }
+  
+  .submit-block {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
