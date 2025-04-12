@@ -1,43 +1,121 @@
-/* src/styles.css */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 20px;
-  }
-  
-  .app {
-    max-width: 600px;
-    margin: auto;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-  }
-  
-  .question-box h2 {
-    font-size: 18px;
-  }
-  
-  ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  li {
-    margin: 10px 0;
-  }
-  
-  .nav-buttons button {
-    margin: 5px;
-  }
-  /* styles.css (добавим стили для компактности) */
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f2f5;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  max-width: 960px;
+  margin: 30px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1, h2, h3 {
+  text-align: center;
+}
+
+.intro-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.form-row label {
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+}
+
+.intro-form input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.start-button {
+  padding: 10px;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  width: fit-content;
+  align-self: center;
+}
+
+.start-button:hover {
+  background-color: #45a049;
+}
+
 .question-box {
-    border-bottom: 1px solid #ddd;
-    padding: 15px 0;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 20px;
+}
+
+.submit-block {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.submit-block button {
+  padding: 12px 30px;
+  font-size: 16px;
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.submit-block button:hover {
+  background-color: #1976d2;
+}
+
+.result {
+  text-align: center;
+  padding: 30px;
+  font-size: 18px;
+}
+
+.medal-block {
+  background: #f1f8e9;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.question-summary {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 15px;
+  background: #fafafa;
+}
+
+/* ✅ Адаптив */
+@media (max-width: 600px) {
+  .form-row {
+    flex-direction: column;
   }
-  
-  .submit-block {
-    margin-top: 20px;
-    text-align: center;
+
+  .form-row label {
+    flex: 1 1 100%;
   }
-  
+}
